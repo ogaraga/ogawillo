@@ -22,7 +22,7 @@
 
         <!-- Form box/ wrapper -->
 
-        <form action="home.html" method="post" id="form__wrapper">
+        <form action="index.html" method="post" id="form__wrapper">
             <label for="prefix">Prefix</label><br>
             <select  style="margin-bottom: 5px;" name="prefix" id="prefix" required>
                 <option disabled selected value="Select Your Status">Select Your Status</option>
@@ -123,8 +123,8 @@
     const statuz = document.getElementById("prefix").value;
     const myForm = document.getElementById("form__wrapper");
     mySubmit.onclick = ()=>{
-        if (male.checked || female.checked && [myName, email, phone, time, address,
-            mycomment, statuz, country]) {
+        if (male.checked || female.checked || myName == "text" && email && phone && 
+            time && address && mycomment && statuz && country) {
             myForm.style.display = "none";
             container.innerText = "Your submission is well received. Thank you!";
             container.style.background = "white";
