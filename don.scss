@@ -121,8 +121,7 @@ form{
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column;
         input{
             margin: 5px auto;
             padding: 5px;
@@ -186,7 +185,7 @@ form{
     
         #symbol-2{
             position: absolute;
-            right: 6%;
+            right: 0%;
             bottom: 2.5%;
             width: 62px;
             z-index: 1;
